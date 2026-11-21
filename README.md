@@ -1,40 +1,51 @@
-# AcreNova — Next-Gen Real Estate & Property Ecosystem
+# AcreNova — Next-Gen Real Estate & Living Ecosystem
 
 > **AcreNova** is a modern, high-performance real estate portal engineered with similar functionality to major industry platforms (like 99acres), but designed with a **completely distinct, bespoke luxury aesthetic** featuring modern typography, deep emerald/slate glassmorphic styling, interactive PropTech tools, automated sliding imagery, and scroll-triggered animations.
 
 ---
 
-## 🌟 What's New & Upgraded
+## 🌐 Live Production Deployment & Repository
 
-### 1. Sliding Hero Carousel & Visual Storytelling
-- **Automated Slideshow**: Automated 5-second rotation featuring ultra-high-resolution architectural photography (Worli Sky Villas, Whitefield Smart Homes, Golf Estates, Portuguese Heritage Villas).
-- **Cinematic Zoom & Transitions**: Smooth crossfades, Ken Burns effect, slide indicator pills, pause-on-hover, and tactile previous/next arrow triggers.
-- **Dynamic Property Overlay**: Displays real-time showcase badge, price, location, BHK, and RERA registration directly over the active slide.
+- **Live URL**: [https://acre-nova.vercel.app](https://acre-nova.vercel.app)
+- **GitHub Repository**: [https://github.com/Satyacoder-31/Acre-nova](https://github.com/Satyacoder-31/Acre-nova)
 
-### 2. Viewport Scroll Animations (`ScrollReveal`)
-- Custom lightweight Intersection Observer hook (`ScrollReveal.jsx`) animating sections, cards, and data as the user scrolls down the page.
-- Fade-up, fade-down, and stagger delays creating a silky-smooth 60fps luxury presentation.
+---
 
-### 3. Upgraded Attractive Header & Navigation
-- **Live Ticker / Announcement Bar**: Real-time ticker with live market stats, verified home count, concierge hotline (`1800-ACRENOVA`), and currency switcher (`₹ INR` / `$ USD`).
-- **Glassmorphic Navbar**: Elevated backdrop blur, subtle glow borders, glowing emblem, and active metro city selector.
-- **Rich Navigation**: Direct access to Buy, Rent, Commercial, New Launches, Valuation AI, and EMI Estimator.
-- **Shimmering "Post Free Property" CTA**: Animated shine sweep with 0% brokerage badge.
+## 🌟 Key Features & Architecture
 
-### 4. Rich New Information Sections
-- **Featured Flagship Projects**: Pre-launch and mega townships from tier-1 developers (Oberoi Realty, Godrej, DLF) with RERA badges, possession dates, and brochure download requests.
-- **Architectural Lifestyle Collections**: Filter homes by lifestyle (Championship Golf Estates, Waterfront Living, Sky Penthouses, Commercial IT Hubs).
-- **Metropolitan City Explorer**: City comparison cards with active listing counts, key micro-markets, and annual capital appreciation rates.
-- **Global NRI Real Estate Desk**: Specialized services for overseas investors (FEMA compliance, NRE/NRO banking, remote consulate Power of Attorney, and 360° tenant leasing).
-- **Legal Guides & Insights Articles**: In-depth editorial pieces covering RERA diligence checklists, Section 54 capital gains tax saving strategies, and micro-market forecasts.
-- **Interactive FAQ Accordion**: Expandable Q&A covering RERA protections, zero brokerage mechanics, and valuation accuracy.
+### 1. 99acres-Style Full-Bleed Sliding Hero Showcase
+- **Cinematic Billboard Slider**: Automated 6-second rotation featuring ultra-high-resolution architectural photography (Worli Sky Mansions, Greater Noida Leafsong Retreat, DLF Phase 5 Golf Estates, Whitefield Smart Homes).
+- **Overlaid Project Details**: Developer badge (`DLF ULTRA LUXURY PRESENTS`, `OBEROI REALTY`), massive typography (`4 & 5 BHK`), pricing (`STARTING PRICE AS ₹ 7.20 Cr* Onwards`), official QR code box, RERA registration numbers, and bank account IFSC info.
+- **Dedicated Outside Controls**: Circular `<` and `>` arrow triggers pinned with generous gutters away from text, plus top-right slide counter (`01 / 04`).
+
+### 2. Signature Floating Overlapping Search Engine
+- **Tabs**: `Buy`, `Rent`, `New Launch •` *(with active dot)*, `Commercial`, `Plots/Land` *(with active underline indicator)*, `Projects`, and `Post Property FREE`.
+- **Search Controls**: Category selector (`Residential ▾`) + vertical divider + search input + GPS Near Me + Voice Search microphone + solid **Search** button.
+
+### 3. "GET STARTED WITH EXPLORING REAL ESTATE OPTIONS" Carousel
+- Horizontal card carousel with `<` and `>` arrows:
+  1. **Buying a home**
+  2. **Renting a home**
+  3. **Invest in Real Estate** (`NEW` badge)
+  4. **Sell/Rent your property** (`Sell faster at the right price!`)
+  5. **Plots/Land**
+  6. **Explore Insights** (`NEW` badge)
+  7. **Commercial Spaces**
+  8. **PG & Co-Living**
+
+### 4. Interactive PropTech Tools & In-Depth Details
+- **Property Detail Modal**: Lightbox gallery, interactive EMI calculator, neighborhood transit scores, and VIP visit pass scheduler.
+- **Post Free Property Wizard**: 4-step listing wizard that immediately syndicates properties into the live stream with confetti!
+- **Property Comparison Drawer**: Floating dock comparing up to 4 properties side-by-side.
+- **AI Valuation & Rental Yield Tool**: Machine learning fair market value and gross rental yield estimator.
+- **Home Loan Eligibility Calculator**: Banking compliance estimator based on monthly income and ongoing obligations.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Framework**: React 19 + Vite
-- **Styling**: Tailwind CSS + Custom Glassmorphism & Animations
+- **Styling**: Tailwind CSS + Custom Glassmorphism
 - **Icons**: Lucide React
 - **Animations**: Custom `ScrollReveal` Intersection Observer + Canvas Confetti
-- **Server**: Running at `http://localhost:5173/`
+- **Hosting**: Vercel Production Deployment

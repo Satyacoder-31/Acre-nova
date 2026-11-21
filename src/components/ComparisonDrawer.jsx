@@ -14,22 +14,22 @@ export default function ComparisonDrawer({
   // If comparison drawer is NOT open in full view, show bottom sticky banner
   if (!isOpen) {
     return (
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 bg-slate-900/95 text-white backdrop-blur-xl px-5 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex items-center gap-4 animate-in slide-in-from-bottom-5">
+      <div className="fixed bottom-20 lg:bottom-4 left-1/2 -translate-x-1/2 z-40 max-w-[92vw] sm:max-w-none bg-slate-900/95 text-white backdrop-blur-xl px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex items-center justify-between sm:justify-start gap-3 sm:gap-4 animate-in slide-in-from-bottom-5">
         <div className="flex items-center gap-2">
-          <Scale className="w-5 h-5 text-brand-400" />
-          <span className="text-sm font-extrabold">
+          <Scale className="w-4 sm:w-5 h-4 sm:h-5 text-brand-400 shrink-0" />
+          <span className="text-xs sm:text-sm font-extrabold whitespace-nowrap">
             Compare ({comparedProperties.length}/4)
           </span>
         </div>
 
         {/* Small thumbnail avatars */}
-        <div className="flex items-center -space-x-2">
+        <div className="hidden sm:flex items-center -space-x-2">
           {comparedProperties.map((p) => (
             <img 
               key={p.id} 
               src={p.images[0]} 
               alt={p.title} 
-              className="w-8 h-8 rounded-full object-cover border-2 border-slate-900"
+              className="w-7 sm:w-8 h-7 sm:h-8 rounded-full object-cover border-2 border-slate-900"
             />
           ))}
         </div>
@@ -37,9 +37,9 @@ export default function ComparisonDrawer({
         <div className="flex items-center gap-2">
           <button
             onClick={onClose}
-            className="px-3.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-extrabold flex items-center gap-1 shadow-md shadow-brand-600/30 transition-all"
+            className="px-3 sm:px-3.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-extrabold flex items-center gap-1 shadow-md shadow-brand-600/30 transition-all whitespace-nowrap"
           >
-            <span>Compare Now</span>
+            <span>Compare</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
           <button
